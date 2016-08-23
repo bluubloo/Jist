@@ -1,13 +1,7 @@
-#include <iostream>
+#include "System.h"
 
-class System
-{
-public:
-	void handleMessage(Message *msg);
-	
-};
 
-int System::handleMessage(Message *msg)
+void System::HandleMessage(Message *msg)
 {
 
 }
