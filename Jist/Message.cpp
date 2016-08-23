@@ -5,6 +5,7 @@
 Message::Message(int type)
 {
 	MessageType = type;
+
 }
 
 

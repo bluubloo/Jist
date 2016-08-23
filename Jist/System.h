@@ -1,9 +1,10 @@
 #pragma once
 #include "Message.h"
+#include <iostream>
 
 class System
 {
 public:
-	void HandleMessage(Message *msg);
+	virtual void HandleMessage(Message *msg);
 	
 };
