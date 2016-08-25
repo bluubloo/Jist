@@ -15,54 +15,60 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="System.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Message.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageBus.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="InputSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Console.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MessageTypes.cpp">
+    <ClCompile Include="Framework\Draw.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MessageAttribute.cpp">
+    <ClCompile Include="System\InputSystem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\Message.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageAttribute.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageBus.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageTypes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="System\System.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="System.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Message.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageBus.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="InputSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Console.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MessageTypes.h">
+    <ClInclude Include="Framework\Draw.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="MessageAttribute.h">
+    <ClInclude Include="System\InputSystem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\Message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageAttribute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageBus.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageTypes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="System\System.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

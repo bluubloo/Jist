@@ -74,7 +74,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\OpenGL Libraries\include;Framework;MessageBus;System;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\OpenGL Libraries\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;glu32.lib;glew32.lib;glfw3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
@@ -90,6 +95,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\OpenGL Libraries\include;Framework;MessageBus;System;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
@@ -111,23 +117,25 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Console.cpp" />
-    <ClCompile Include="InputSystem.cpp" />
+    <ClCompile Include="Framework\Draw.cpp" />
+    <ClCompile Include="System\InputSystem.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Message.cpp" />
-    <ClCompile Include="MessageAttribute.cpp" />
-    <ClCompile Include="MessageBus.cpp" />
-    <ClCompile Include="MessageTypes.cpp" />
-    <ClCompile Include="System.cpp" />
+    <ClCompile Include="MessageBus\Message.cpp" />
+    <ClCompile Include="MessageBus\MessageAttribute.cpp" />
+    <ClCompile Include="MessageBus\MessageBus.cpp" />
+    <ClCompile Include="MessageBus\MessageTypes.cpp" />
+    <ClCompile Include="System\System.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Console.h" />
-    <ClInclude Include="InputSystem.h" />
-    <ClInclude Include="Message.h" />
-    <ClInclude Include="MessageAttribute.h" />
-    <ClInclude Include="MessageBus.h" />
-    <ClInclude Include="MessageTypes.h" />
+    <ClInclude Include="Framework\Draw.h" />
+    <ClInclude Include="System\InputSystem.h" />
+    <ClInclude Include="MessageBus\Message.h" />
+    <ClInclude Include="MessageBus\MessageAttribute.h" />
+    <ClInclude Include="MessageBus\MessageBus.h" />
+    <ClInclude Include="MessageBus\MessageTypes.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="System.h" />
+    <ClInclude Include="System\System.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Jist.rc" />
