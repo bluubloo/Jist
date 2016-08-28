@@ -29,3 +29,9 @@ void InputSystem::HandleMessage(Message *msg)
 	}
 }
 
+void InputSystem::CloseWindow()
+{
+	std::list<MessageAttribute> attr;
+	MessageBus::PutMessage(&Message(MessageTypes::WINDOW_CLOSED, attr));
+}
+

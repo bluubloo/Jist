@@ -18,6 +18,8 @@ void MessageTypes::Init()
 	map.insert({ "entity_killed", ENTITY_KILLED });
 	map.insert({ "entity_moved", ENTITY_MOVED });
 
+	map.insert({ "game_exited", GAME_EXITED });
+
 	map.insert({ "interact", INTERACT });
 	map.insert({ "item_dropped", ITEM_DROPPED });
 
@@ -25,6 +27,8 @@ void MessageTypes::Init()
 
 	map.insert({ "open_character_sheet", OPEN_CHARACTER_SHEET });
 	map.insert({ "open_inventory", OPEN_INVENTORY });
+
+	map.insert({ "window_closed", WINDOW_CLOSED });
 }
 
 int MessageTypes::GetAsInt(std::string msgType)

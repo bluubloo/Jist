@@ -118,7 +118,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Console.cpp" />
+    <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="System\Console.cpp" />
     <ClCompile Include="Framework\Draw.cpp" />
     <ClCompile Include="System\InputSystem.cpp" />
     <ClCompile Include="Main.cpp" />
@@ -129,7 +130,8 @@
     <ClCompile Include="System\System.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Console.h" />
+    <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="System\Console.h" />
     <ClInclude Include="Framework\Draw.h" />
     <ClInclude Include="System\InputSystem.h" />
     <ClInclude Include="MessageBus\Message.h" />

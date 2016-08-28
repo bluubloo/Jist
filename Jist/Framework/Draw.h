@@ -3,12 +3,14 @@
 #include <GLFW/glfw3.h>
 #include <string>
 #include <iostream>
+#include <InputSystem.h>
 
 class Draw
 {
 public:
 	Draw();
 	~Draw();
+
 
 	void Redraw();
 
@@ -20,6 +22,5 @@ public:
 private:
 	GLFWwindow* window;
 
-	bool threadActive;
 };
 

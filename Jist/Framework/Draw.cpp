@@ -4,7 +4,6 @@
 
 Draw::Draw()
 {
-	threadActive = true;
 
 	glfwInit();
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3); //Setting the OpenGL versions 
@@ -40,6 +39,13 @@ Draw::~Draw()
 
 void Draw::Redraw()
 {
+	if (glfwWindowShouldClose(window))
+	{
+		glfwDestroyWindow(window);
+		glfwPollEvents();
+		InputSystem().CloseWindow();
+		return;
+	}
 	glfwPollEvents();
 	glfwSwapBuffers(window);
 }

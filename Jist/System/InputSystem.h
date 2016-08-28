@@ -1,8 +1,8 @@
 #pragma once
 #include "System.h"
 #include <iostream>
-
 #include "MessageTypes.h"
+#include "MessageBus.h"
 
 class InputSystem : public System
 {
@@ -14,6 +14,7 @@ public:
 
 	void HandleMessage(Message *msg);
 
+	void CloseWindow();
 
 };
 

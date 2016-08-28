@@ -5,7 +5,7 @@
 #include "MessageBus.h"
 #include "MessageTypes.h"
 
-class Console
+class Console : public System
 {
 public:
 	Console();
@@ -14,5 +14,10 @@ public:
 	void ConsoleThread();
 
 	void ConsoleInput(std::string input);
+
+	void HandleMessage(Message *msg);
+
+private:
+	bool gameActive;
 };
 

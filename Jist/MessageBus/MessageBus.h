@@ -15,9 +15,8 @@ public:
 	MessageBus();
 	~MessageBus();
 
-	void Start();
-	void Subscribe(System* subscriber);
-	void PutMessage(Message *msg);
+	static void Subscribe(System* subscriber);
+	static void PutMessage(Message *msg);
 
 private:
 	static std::list<System*> subscribers;

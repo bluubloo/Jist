@@ -13,11 +13,6 @@ MessageBus::~MessageBus()
 }
 
 
-void MessageBus::Start()
-{
-
-}
-
 //Adds a system to the subscriber list so it will receive messages from the message bus
 void MessageBus::Subscribe(System* subscriber)
 {
