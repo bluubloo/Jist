@@ -18,14 +18,16 @@ int main()
 
 	//Create the drawing thread and join it
 	Draw window;
+	Shaders::Init();
 	std::thread consoleInput(&Console::ConsoleThread, Console());
 	consoleInput.detach();
 
 	bool gameActive = true;
 	std::string message;
+	window.Redraw();
 	while (game.IsActive())
 	{
-		window.Redraw();
+		window.CheckInput();
 	}
 	return 0;
 }

@@ -13,69 +13,105 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\System">
+      <UniqueIdentifier>{bdd53851-0b51-4319-bd5a-3aab5fb195ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework">
+      <UniqueIdentifier>{02ca1149-bc24-4867-a2b8-86b417c3ee9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\MessageBus">
+      <UniqueIdentifier>{fd29df97-a9a5-4606-8c33-ed6155b3e503}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Framework\Draw">
+      <UniqueIdentifier>{2f860941-2d5f-4e8c-a414-488ca0e51434}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework">
+      <UniqueIdentifier>{374713ed-0b09-49da-9f91-98e6838db6fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Draw">
+      <UniqueIdentifier>{7fcb0fdb-010a-492b-a946-19e3185bf0e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\System">
+      <UniqueIdentifier>{574018fc-f4eb-4e04-aa5a-11bc6e8ce2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\MessageBus">
+      <UniqueIdentifier>{57d6b6e9-369b-48ab-bbe3-61bd2ef1a5e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Framework\Draw.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Framework\Draw</Filter>
     </ClCompile>
-    <ClCompile Include="System\InputSystem.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageBus\Message.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageBus\MessageAttribute.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageBus\MessageBus.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="MessageBus\MessageTypes.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="System\System.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Framework\Point2D.cpp">
+      <Filter>Source Files\Framework\Draw</Filter>
     </ClCompile>
     <ClCompile Include="System\Console.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\System</Filter>
     </ClCompile>
-    <ClCompile Include="GameSystem.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="System\GameSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\InputSystem.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="System\System.cpp">
+      <Filter>Source Files\System</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\Message.cpp">
+      <Filter>Source Files\MessageBus</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageAttribute.cpp">
+      <Filter>Source Files\MessageBus</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageBus.cpp">
+      <Filter>Source Files\MessageBus</Filter>
+    </ClCompile>
+    <ClCompile Include="MessageBus\MessageTypes.cpp">
+      <Filter>Source Files\MessageBus</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Shaders.cpp">
+      <Filter>Source Files\Framework\Draw</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Framework\Draw.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="System\GameSystem.h">
+      <Filter>Header Files\System</Filter>
     </ClInclude>
     <ClInclude Include="System\InputSystem.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageBus\Message.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageBus\MessageAttribute.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageBus\MessageBus.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MessageBus\MessageTypes.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\System</Filter>
     </ClInclude>
     <ClInclude Include="System\System.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\System</Filter>
     </ClInclude>
     <ClInclude Include="System\Console.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\System</Filter>
     </ClInclude>
-    <ClInclude Include="GameSystem.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="MessageBus\MessageTypes.h">
+      <Filter>Header Files\MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageBus.h">
+      <Filter>Header Files\MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\MessageAttribute.h">
+      <Filter>Header Files\MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="MessageBus\Message.h">
+      <Filter>Header Files\MessageBus</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Point2D.h">
+      <Filter>Header Files\Framework\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Draw.h">
+      <Filter>Header Files\Framework\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Shaders.h">
+      <Filter>Header Files\Framework\Draw</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

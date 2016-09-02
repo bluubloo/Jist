@@ -118,7 +118,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="Framework\Shaders.cpp" />
+    <ClCompile Include="System\GameSystem.cpp" />
+    <ClCompile Include="Framework\Point2D.cpp" />
     <ClCompile Include="System\Console.cpp" />
     <ClCompile Include="Framework\Draw.cpp" />
     <ClCompile Include="System\InputSystem.cpp" />
@@ -130,7 +132,9 @@
     <ClCompile Include="System\System.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="Framework\Shaders.h" />
+    <ClInclude Include="System\GameSystem.h" />
+    <ClInclude Include="Framework\Point2D.h" />
     <ClInclude Include="System\Console.h" />
     <ClInclude Include="Framework\Draw.h" />
     <ClInclude Include="System\InputSystem.h" />
