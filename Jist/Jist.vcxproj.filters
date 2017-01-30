@@ -37,6 +37,12 @@
     <Filter Include="Source Files\MessageBus">
       <UniqueIdentifier>{57d6b6e9-369b-48ab-bbe3-61bd2ef1a5e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\Framework\Input">
+      <UniqueIdentifier>{73f938b9-7131-4c84-be6f-c58c9fc5d053}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Framework\Input">
+      <UniqueIdentifier>{47334c30-8722-42a3-bf5b-015a494c3b39}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Main.cpp">
@@ -75,6 +81,9 @@
     <ClCompile Include="Framework\Shaders.cpp">
       <Filter>Source Files\Framework\Draw</Filter>
     </ClCompile>
+    <ClCompile Include="Framework\Input.cpp">
+      <Filter>Source Files\Framework\Input</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
@@ -112,6 +121,9 @@
     </ClInclude>
     <ClInclude Include="Framework\Shaders.h">
       <Filter>Header Files\Framework\Draw</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Input.h">
+      <Filter>Header Files\Framework\Input</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

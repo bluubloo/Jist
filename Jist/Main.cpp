@@ -1,7 +1,9 @@
 
+#include "Draw.h"
+#include "Input.h"
+
 #include "Console.h"
 #include "InputSystem.h"
-#include "Draw.h"
 #include "GameSystem.h"
 
 #include <iostream>
@@ -17,17 +19,18 @@ int main()
 	MessageTypes().Init();
 
 	//Create the drawing thread and join it
-	Draw window;
+	Draw draw;
 	Shaders::Init();
+	Input input(draw.GetWindow());
 	std::thread consoleInput(&Console::ConsoleThread, Console());
 	consoleInput.detach();
 
 	bool gameActive = true;
 	std::string message;
-	window.Redraw();
+	draw.Redraw();
 	while (game.IsActive())
 	{
-		window.CheckInput();
+		input.CheckInput();
 	}
 	return 0;
 }
